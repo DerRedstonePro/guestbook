@@ -56,6 +56,11 @@
 				<textarea th:field="*{text}" th:errorclass="is-invalid" class="form-control" required="required"></textarea>
 				<div th:if="${#fields.hasErrors('text')}" class="invalid-feedback" th:text="#{guestbook.form.text.required}">Please provide a text.</div>
 			</div>
+			<div class="form-group">
+				<label for="text2" th:text2="#{guestbook.form.text2}">Zweiter Text</label><br />
+				<textarea th:field="*{text2}" th:errorclass="is-invalid" class="form-control" required="required"></textarea>
+				<div th:if="${#fields.hasErrors('text')}" class="invalid-feedback" th:text="#{guestbook.form.text2.required}">Please provide a text.</div>
+			</div>
 			<input type="submit" class="btn btn-secondary" th:value="#{guestbook.form.submit}" value="Senden" />
 		</form>
 
