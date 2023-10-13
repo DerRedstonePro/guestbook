@@ -43,14 +43,15 @@ class GuestbookEntry {
 	 * @param name must not be {@literal null} or empty
 	 * @param text must not be {@literal null} or empty
 	 */
-	public GuestbookEntry(String name, String text) {
+	public GuestbookEntry(String name, String text, String text2) {
 
 		Assert.hasText(name, "Name must not be null or empty!");
 		Assert.hasText(text, "Text must not be null or empty!");
+		Assert.hasText(text2, "Text must not be null or empty!");
 
 		this.name = name;
 		this.text = text;
-		this.text2 = text;
+		this.text2 = text2;
 		this.date = LocalDateTime.now();
 	}
 
