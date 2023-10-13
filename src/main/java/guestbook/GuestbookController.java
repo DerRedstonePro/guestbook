@@ -163,7 +163,7 @@ class GuestbookController {
 	 * @throws ResponseStatusException
 	 */
 	@HxRequest
-	@PreAuthorize("hasRole('ADMIN')")
+	//@PreAuthorize("hasRole('ADMIN')")
 	@DeleteMapping(path = "/guestbook/{entry}")
 	HtmxResponse removeEntryHtmx(@PathVariable Optional<GuestbookEntry> entry, Model model) {
 
